@@ -5,41 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./indexStyle.css" />
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function(){
-
-        let button1=document.querySelector("#Button1")
-        document.querySelector("#Button1").addEventListener('click', function(event){
-          button1.style.backgroundColor='hsl(25, 97%, 53%)'
-          button1.style.color='white'
-        });
-
-        let button2=document.querySelector("#Button2")
-        document.querySelector("#Button2").addEventListener('click', function(event){
-          button2.style.backgroundColor='hsl(25, 97%, 53%)'
-          button2.style.color='white'
-        });
-
-        let button3=document.querySelector("#Button3")
-        document.querySelector("#Button3").addEventListener('click', function(event){
-          button3.style.backgroundColor='hsl(25, 97%, 53%)'
-          button3.style.color='white'
-        });
-
-        let button4=document.querySelector("#Button4")
-        document.querySelector("#Button4").addEventListener('click', function(event){
-          button4.style.backgroundColor='hsl(25, 97%, 53%)'
-          button4.style.color='white'
-        });
-
-        let button5=document.querySelector("#Button5")
-        document.querySelector("#Button5").addEventListener('click', function(event){
-          button5.style.backgroundColor='hsl(25, 97%, 53%)'
-          button5.style.color='white'
-        });
-      });
-    </script>
-
     <title>Interactive rating component</title>
   </head>
   <body>
@@ -55,7 +20,7 @@
         appreciated to help us improve our offering!
       </div>
 
-      <div class="buttonWrap">
+      <div class="buttonWrap" id="rating">
         <button class="button" id="Button1">1</button>
         <button class="button" id="Button2">2</button>
         <button class="button" id="Button3">3</button>
@@ -71,5 +36,7 @@
     </div>
     <!-- Rating state end -->
   </div>
+  <script src="./index.js"> </script>
+  <script src="./thankYou.js"></script>
   </body>
 </html>
